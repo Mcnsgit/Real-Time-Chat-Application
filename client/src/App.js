@@ -10,6 +10,7 @@ function App() {
       <header className="app-header">
         <h1>Chat Application</h1>
       </header>
+      
       <main className="app-main">
         <ChatRoom />
       </main>
