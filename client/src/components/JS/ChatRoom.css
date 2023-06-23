@@ -1,7 +1,7 @@
 /* ChatRoom.css */
 
 /* Style for the chat room container */
-.chat-room {
+.ChatRoom {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -9,13 +9,13 @@
 }
 
 /* Style for the message list container */
-.message-list {
+.MessageList {
     flex-grow: 1;
     overflow-y: auto;
 }
 
 /* Style for each individual message */
-.message {
+.ChatBubble-chat-app {
     margin-bottom: 10px;
     padding: 5px;
     background-color: #f2f2f2;
@@ -23,12 +23,12 @@
 }
 
 /* Style for the message input field */
-.message-input {
+.MessageInput {
     margin-top: 10px;
 }
 
 /* Style for the user list */
-.user-list {
+.UserList {
     margin-top: 10px;
 }
 
