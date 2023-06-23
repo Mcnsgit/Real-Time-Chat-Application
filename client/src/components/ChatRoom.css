@@ -1,0 +1,38 @@
+/* ChatRoom.css */
+
+/* Style for the chat room container */
+.chat-room {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Style for the message list container */
+.message-list {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Style for each individual message */
+.message {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Style for the message input field */
+.message-input {
+    margin-top: 10px;
+}
+
+/* Style for the user list */
+.user-list {
+    margin-top: 10px;
+}
+
+/* Style for each individual user */
+.user {
+    margin-bottom: 5px;
+}
