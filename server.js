@@ -1,23 +1,12 @@
-var app = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-const { Alert } = require('react-native-web');
-const server = require('http').createServer(app);
+var ip = require('ip');
+app.use(express.static('./'));
 
-app.get('/', function (req, res) {
-    respond('index.html');
-});
+require("./Controller/controller")(app, io);
 
-io.on('connection', function (socket) {
-    console.log('user connected');
-    socket.on('chat message', function (msg) {
-        io.emit('chat message', msg);
-    });
-    socket.on('disconnect', function () {
-        console.log('user disconnected');
-    });
-});
-
-http.listen(3000, function () {
-    console.log('listening on *:3000');
+http.listen(8080, function () {
+    console.log('listening on *:8080');
 });
