@@ -1,4 +1,4 @@
-var models = require('../model/model.js');
+var models = require('../Model/model');
 var path = require('path');
 var bodyParser = require('body-parser');
 

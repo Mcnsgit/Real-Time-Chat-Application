@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "firefox",
+            "request": "attach",
+            "name": "Attach"
+        },
+        {
+            "type": "chrome",
+            "name": "http://localhost:8080",
+            "request": "launch",
+            "url": "http://localhost:8080"
+        }
+    ]
+}
